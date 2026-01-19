@@ -1,5 +1,5 @@
-workflowname: template_nextflow_workflow
-workflowdescription: template_nextflow_workflow
+workflowname: LibrarySummary_workflow
+workflowdescription: LibrarySummary_workflow
 workflowlongdescription: This is a template nextflow workflow for GNPS2
 workflowversion: "2025.06.20"
 workflowfile: nf_workflow.nf
@@ -12,10 +12,10 @@ parameterlist:
 
     - displayname: Input Data Folder
       paramtype: fileselector
-      nf_paramname: input_spectra
+      nf_paramname: input_libraries
       formplaceholder: Enter the path to data
       formvalue: ""
-      targettaskfolder: input_spectra
+      targettaskfolder: input_libraries
       optional: false
       selectsinglefile: false
       folderunroll: true
