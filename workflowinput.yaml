@@ -1,7 +1,7 @@
 workflowname: LibrarySummary_workflow
 workflowdescription: LibrarySummary_workflow
 workflowlongdescription: This is a template nextflow workflow for GNPS2
-workflowversion: "2025.06.20"
+workflowversion: "2026.01.23"
 workflowfile: nf_workflow.nf
 workflowautohide: false
 adminonly: false

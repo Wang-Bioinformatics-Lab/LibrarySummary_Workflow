@@ -31,8 +31,8 @@ include {summaryLibrary} from "$MODULES_FOLDER/nf_library_search_modules.nf" add
 
 workflow {
     libraries_ch = Channel.fromPath(params.input_libraries + "/*.mgf")
-    // Get the first one
-    library_summary_ch = summaryLibrary(libraries_ch.first())
+    
+    library_summary_ch = summaryLibrary(libraries_ch)
 
     // merge summary files as tsv
     library_summary_ch.collectFile(name: 'librarysummary.tsv', keepHeader: true, storeDir: _publishdir + "/librarysummary")
